@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import BookingForm from './BookingForm';
+import DeleteVenue from './DeleteVenue';
 
 function VenueDetail() {
   const [venue, setVenue] = useState(null);
@@ -30,6 +31,7 @@ function VenueDetail() {
           <p>{venue.description}</p>
           {/* Render the BookingForm component and pass the venue's ID as a prop */}
           <BookingForm venueId={venue.id} />
+        <DeleteVenue venueId={venue.id} />
         </>
       ) : (
         <p>Loading...</p>
@@ -40,3 +42,5 @@ function VenueDetail() {
 }
 
 export default VenueDetail;
+
+// {user.role === 'venueManager' && <DeleteVenue venueId={venue.id} />}

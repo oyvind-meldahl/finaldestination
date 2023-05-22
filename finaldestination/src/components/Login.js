@@ -41,3 +41,33 @@ function Login() {
 }
 
 export default Login;
+
+
+/* 
+
+function logout() {
+  // Clear access token from local storage
+  localStorage.removeItem('accessToken');
+
+  // Clear user data from state
+  setUser(null);
+
+  // Redirect to login page
+  navigate('/login');
+}
+
+
+*/
+
+/*
+
+import { useNavigate } from 'react-router-dom';
+
+// ...
+
+const navigate = useNavigate();
+
+// ...
+
+
+*/
