@@ -9,7 +9,7 @@ import placeholderImage from '../logo2.png';
 
 
 function VenueDetail() {
-  const [bookings, setBookings] = useState([]);
+  const [setBookings] = useState([]);
   const [venue, setVenue] = useState(null);
   const [showBookingForm, setShowBookingForm] = useState(false);
   const { id } = useParams();

@@ -9,7 +9,6 @@ function MyVenues() {
   const accessToken = localStorage.getItem('accessToken');
   const venueManager = localStorage.getItem('venueManager') === 'true';
   const userId = localStorage.getItem('userId');
-  const navigate = useNavigate();
 
   useEffect(() => {
    

@@ -10,7 +10,6 @@ function BookingDetail() {
 
   useEffect(() => {
     const accessToken = localStorage.getItem('accessToken');
-    const userId = localStorage.getItem('userId');
 
     axios.get(`https://api.noroff.dev/api/v1/holidaze/bookings/${id}?_venue=true`, {
       headers: {

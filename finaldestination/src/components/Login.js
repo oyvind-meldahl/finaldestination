@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import { AuthContext } from './AuthContext';
 import { Card, Form, Button } from 'react-bootstrap';
@@ -10,7 +10,7 @@ function Login() {
     const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  const { setUser, setUserId } = useContext(AuthContext);
+  const { setUser } = useContext(AuthContext);
 
   const handleSubmit = (event) => {
     event.preventDefault();
