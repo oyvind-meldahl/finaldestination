@@ -24,7 +24,7 @@ import ThankYou from './components/ThankYou';
 import EditVenue from './components/EditVenue';
 import BookingDetail from './components/BookingDetail';
 
-// Styles
+// Style
 import './App.css';
 
 function App() {
