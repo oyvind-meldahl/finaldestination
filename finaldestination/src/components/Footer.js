@@ -1,11 +1,10 @@
-// Footer.js
 import React from 'react';
 
 function Footer() {
   return (
-    <footer className="footer bg-light py-3">
+    <footer className="footer py-3">
       <div className="container">
-        <span className="text-muted">&copy; 2023 My Airbnb</span>
+        <span className="text-muted text-center d-block text-white">&copy; 2023 Hummingbird</span>
       </div>
     </footer>
   );

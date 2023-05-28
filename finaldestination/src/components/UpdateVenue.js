@@ -11,7 +11,6 @@ function UpdateVenue() {
   const { id } = useParams();
 
   useEffect(() => {
-    // Get the access token from local storage
     const accessToken = localStorage.getItem('accessToken');
 
     axios.get(`https://api.noroff.dev/api/v1/holidaze/venues/${id}`, {
@@ -38,7 +37,6 @@ function UpdateVenue() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    // Get the access token from local storage
     const accessToken = localStorage.getItem('accessToken');
 
     axios.put(`https://api.noroff.dev/api/v1/holidaze/venues/${id}`, {
@@ -53,7 +51,6 @@ function UpdateVenue() {
     })
       .then(response => {
         console.log(response.data);
-        // You might want to do something like redirecting the user to the venue page here
       })
       .catch(error => {
         if (error.response) {

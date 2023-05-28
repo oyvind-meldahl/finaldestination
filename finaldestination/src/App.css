@@ -1,5 +1,11 @@
+body {
+    background-color: #EEEDE4 !important;
+}
+
+
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -35,4 +41,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.imgstyling {
+  height: 200px;
+  object-fit: cover;
+}
+
+.navbar {
+  background-color: #054321;
+  color: white;
+}
+
+.footer {
+  background-color: #054321;
+}
+
+.detailsImage {
+  max-width: 75vw;
+  height: 100%;
+  display: block;
+  margin: 2rem auto;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.frontimage {
+  max-height: 70vh;
 }

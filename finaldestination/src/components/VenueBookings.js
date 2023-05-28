@@ -8,7 +8,7 @@ function VenueBookings() {
   const { id } = useParams();
 
   useEffect(() => {
-    // Get the access token from local storage
+   
     const accessToken = localStorage.getItem('accessToken');
 
     axios.get(`https://api.noroff.dev/api/v1/holidaze/venues/${id}?_bookings=true`, {
